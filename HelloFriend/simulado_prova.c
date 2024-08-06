@@ -2,9 +2,11 @@
 
 void questao1();
 void questao2();
+void questao3();
+void crescente_decrescente(int a, int b, int c, int d, int caso);
 
 int main(){
-    questao2();
+    questao3();
     return 0;
 }
 
@@ -45,6 +47,72 @@ void questao2(){
     }
     media = somatorio/contador;
     printf("\n Media -> %.2f",media);
-        
+}
 
+void questao3(){
+    int a, b, c, d, caso;
+    printf("Escolha um numero inteiro aleatorio: ");
+    scanf("%d", &a);
+    printf("Escolha um numero inteiro aleatorio: ");
+    scanf("%d", &b);
+    printf("Escolha um numero inteiro aleatorio: ");
+    scanf("%d", &c);
+    printf("Escolha um numero inteiro aleatorio: ");
+    scanf("%d", &d);    
+    printf("\n1: Ordem Crescente\n2: Ordem Decrescente\nEscolha: ");
+    scanf("%d", &caso);
+    crescente_decrescente(a,b,c,d,caso);
+    
+}
+
+void crescente_decrescente(int a, int b, int c, int d, int caso){
+    int aux;
+    if(a<b){
+        aux = a;
+        a = b;
+        b = aux;
+    }
+    //printf("\n%d %d %d %d", a, b, c, d);
+    if(a<c){
+        aux = a;
+        a = c;
+        c = aux;
+    }
+    //printf("\n%d %d %d %d", a, b, c, d);
+    if(a<d){
+        aux = a;
+        a = d;
+        d = aux;
+    }
+    //printf("\n%d %d %d %d", a, b, c, d);
+    if(b<c){
+        aux = b;
+        b = c;
+        c = aux;
+    }
+    //printf("\n%d %d %d %d", a, b, c, d);
+    if(b<d){
+        aux = b;
+        b = d;
+        d = aux;
+    }
+    //printf("\n%d %d %d %d", a, b, c, d);
+    if(c<d){
+        aux = c;
+        c = d;
+        d = aux;
+    }
+
+    switch(caso){
+        case 1:
+            printf("\n\n%d %d %d %d", d, c, b, a);
+            break;
+        case 2:
+            printf("\n\n%d %d %d %d", a, b, c, d);
+            break;
+        default:
+            printf("ERROR 404: NOT FOUND");
+            break;
+    }
+    
 }
