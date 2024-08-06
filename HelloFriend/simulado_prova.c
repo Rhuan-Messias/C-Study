@@ -4,9 +4,12 @@ void questao1();
 void questao2();
 void questao3();
 void crescente_decrescente(int a, int b, int c, int d, int caso);
+void questao4();
+void questao5();
+int fibo(int num);
 
 int main(){
-    questao3();
+    questao5();
     return 0;
 }
 
@@ -116,3 +119,51 @@ void crescente_decrescente(int a, int b, int c, int d, int caso){
     }
     
 }
+
+void questao4(){
+    int inicio, final, i, j, teste=0, aux, contagem=0, somatorio=0;
+    float media; 
+    while(inicio<4 || inicio>100 || final>1000 || final<4){
+        printf("Digite o inicio entre 5 e 99: ");
+        scanf("%d", &inicio);
+        printf("Digite o final entre 5 e 999: ");
+        scanf("%d", &final);
+    }
+
+    for(i=inicio;i<=final;i++){
+        teste=0;
+        for(j=1;j<=i;j++){
+            aux = i%j;
+            if(aux==0){
+                teste += 1;
+            }
+        }
+
+        if(teste==2){
+            printf("\n%d", i);
+            contagem+=1;
+            somatorio+=i;
+            }
+    }
+
+    media = somatorio/contagem;
+    printf("\nMedia --> %.2f", media);
+
+}
+
+int fibo(int num){
+    if(num<3){
+        return 1;
+    }
+    return fibo(num-1)+ fibo(num-2);
+}
+
+void questao5(){
+  int num;
+  printf("Escolha o n-esimo numero: ");
+  scanf("%d", &num);
+
+  printf("%d", fibo(num));
+}
+
+
