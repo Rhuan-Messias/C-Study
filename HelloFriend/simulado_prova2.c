@@ -6,9 +6,10 @@ void questao3();
 void questao4();
 void questao5();
 void questao6();
+void questao_real();
 
 int main(){
-    questao6();
+    questao_real();
     return 0;
 }
 
@@ -151,4 +152,23 @@ void questao6(){
             printf("%d ", n[i]);
     }
 
+}
+
+void questao_real(){
+    int i,j,contador=0;
+    i=0;
+    j=0;
+
+    while(contador<=30){
+        printf("%d%d\n",i,j);
+
+        if(j==8){
+            i+=1;
+            j=0;
+        } else{
+            j+=1;
+        }
+
+        contador +=1;
+    }
 }
