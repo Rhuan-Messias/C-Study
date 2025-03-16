@@ -1,0 +1,33 @@
+
+Fila de Clientes:
+Nome: Cliente A, Código: 101
+Lista de Mercado:
+Nome: Produto 1A, Preço: 10.50, Código: 123, Quantidade: 10
+Nome: Produto 2A, Preço: 20.00, Código: 2, Quantidade: 2
+--------------------
+Nome: Cliente B, Código: 102
+Lista de Mercado:
+Nome: Produto 1B, Preço: 15.00, Código: 3, Quantidade: 3
+Nome: Produto 3B, Preço: 35.00, Código: 5, Quantidade: 5
+--------------------
+Nome: Cliente C, Código: 103
+Lista de Mercado:
+Nome: Produto 1C, Preço: 5.00, Código: 6, Quantidade: 6
+--------------------
+
+Cliente Desenfileirado:
+Nome: Cliente A, Código: 101
+Lista de Mercado:
+Nome: Produto 1A, Preço: 10.50, Código: 123, Quantidade: 10
+Nome: Produto 2A, Preço: 20.00, Código: 2, Quantidade: 2
+
+Fila após desenfileirar:
+Nome: Cliente B, Código: 102
+Lista de Mercado:
+Nome: Produto 1B, Preço: 15.00, Código: 3, Quantidade: 3
+Nome: Produto 3B, Preço: 35.00, Código: 5, Quantidade: 5
+--------------------
+Nome: Cliente C, Código: 103
+Lista de Mercado:
+Nome: Produto 1C, Preço: 5.00, Código: 6, Quantidade: 6
+--------------------
